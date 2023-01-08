@@ -39,7 +39,7 @@ main()
             }
             if(GetAsyncKeyState(VK_UP))
             {
-                char nextLocation = getCharAtxy(pacmanX,pacmanY - 1);
+                char nextLocation = getCharAtxy(pacmanX,pacmanY -1);
                 if(nextLocation == ' ')
                 {
                     erase(pacmanX,pacmanY);
@@ -52,7 +52,7 @@ main()
                 char nextLocation = getCharAtxy(pacmanX, pacmanY + 1);
                 if(nextLocation == ' ' )
                 {
-                    erase(pacmanX,pacmanY + 1);
+                    erase(pacmanX,pacmanY);
                     pacmanY = pacmanY + 1;
                     printPacman(pacmanX,pacmanY);
                 }
